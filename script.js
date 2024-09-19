@@ -28,11 +28,11 @@ const createScrollTrigger = (trigger, timeline) => {
 		markers: true,
 		onEnter: () => {
 			timeline.play();
-			log("onEnter");
+			console.log("onEnter");
 		},
 		onEnterBack: () => {
 			timeline.reverse();
-			log("onEnterBack");
+			console.log("onEnterBack");
 		},
 		onLeaveBack: () => {
 			timeline.pause(0);
